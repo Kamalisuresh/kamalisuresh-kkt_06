@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+           h1{
+                color:rgb(37, 35, 35);
+                text-shadow: 2px 2px rgb(20, 19, 19);
+            }
+        form{
+
+            color: rgb(32, 38, 216);
+           width:60%;
+           margin: auto;
+           font-size: medium;
+           border: 1px solid black;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select { 
+            width:calc(100%-22)
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: chartreuse;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        ol {
+            background-color: blanchedalmond;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    
+        </style>
+        <title>student registration form</title>
+    </head>
+
+    <body >
+        <style>
+            table,form,td,tr{
+            background-color: blanchedalmond;
+            width:60%;
+            margin: auto;
+            font-size: medium;
+          
+            }
+            ol{
+                background-color: blanchedalmond;
+                text-align: left;
+            }
+        </style>
+        <form>
+            <center><b><h1><mark>STUDENT REGISTRATION FORM</mark> </h1></b></center>
+            <h1><center><q><abb title="AVINASHILINGAM">AVINUTY </abb>INSTITUTION FORM</q></center></h1>
+            <center><a href="rules.asp" target="_blank">this is a link for rules</a><br></center>
+            <br><label> FIRST NAME</label>
+            <input type ="text" id="FIRST NAME"  placeholder="maximum 20 letters A-z" maxlength="20"required><br><br>
+            <label>LAST NAME</label>
+            <input type="text" id ="LAST NAME" placeholder="maximum 20 letters A-z"maxlength="20" required><br><br>
+            <label>GARUDIAN</label>
+            <input type="text"  id ="GARUDIAN" placeholder="maximum 20 letters A-z"maxlength="20"/></td><br>
+            <br><label>DOB</label>
+            <input type="date" name="date of brith" id ="dob"/><br>
+            <br><label>EMAIL</label>
+            <input type="email"placeholder="example *****@gmail.com" id="emailid"/><br><br>
+            <br><LABEL> PASSWORD</LABEL>
+            <input type="password" name="password"><br><br>
+
+          <br><label>PHONE NUMBER</label>
+          <input type="tel" name="phonenumber"placeholder="only 10 digits" oniputs="numberonly(this)"><br>
+            <select>
+                    <option value="+91(india)" selected>+91(india)</option>
+                    <option value="+1(usa)">+1(usa)</option>
+                    <option  value="+44(uk)" >+44(uk)</option>
+                    <option value="+52(mexico)">+52(mexico)</option>
+            </select>
+            <br><label>GENDER</label><br>
+            <input type="radio"name="gender"value="male">male
+            <input type="radio"name="gender"value="female">female
+            <input type="radio"name="gender"value="other">others
+            <br><label>ADDRESS</label>
+            <textarea></textarea>
+            <br> <label>CITY</label>
+            <input type="text"><br><br>
+            <br> <label>STATE</label>
+            <input type="text"><br><br>
+            <br><label>PINCODE</label>
+            <input type="text"><br>
+            <br><label> AADHAR CARD</label> 
+            <input type="file" name="aadhar_card" > <br>
+            <br><table>COURSE AVAILABLE(choose any one)</label<br>
+            <br><input type="checkbox" name="course1"value="CSE" checked/>CSE<br>
+            <input type="checkbox" name="course2"value="AI&DS">AI&DS<br>
+            <input type="checkbox" name="course3"value="BMIE">BMIE<br>
+            <input type="checkbox" name="course4"value="ECE" >ECE<br>
+            <input type="checkbox" name="course5"value="CIVIL">CIVIL<br>
+            <br> <label> QUALIFICATION</label>
+            <br> <input type="file" >12th marksheet
+            <input type="text" name="percentage" placeholder="CBSE(56%)"><br>
+            <input type="file">10th marksheet
+            <input type="text" name="percentage" placeholder="CBSE(56%)"><br><br>
+            <input  type="file"><br>
+            <input type="file" id="fileInput" multiple>you can olny upload 3 files<br>
+            <style>
+                table,th,td{
+                    border: 1px solid black;
+                    border-collapse:collapse ;
+                  background-color: blanchedalmond;
+                }
+            </style>
+            <br> <for><b>FILL THE DETAILS BELOW</b></form>
+            <table>
+                <tr>
+                    <th >school</th>
+                    <th>board</th>
+                    <th>year of passsing</th>
+                </tr>
+                <tr>
+                    <td><input type="text"placeholder="scchool(12th)"></td>
+                    <td> <input type="text"placeholder="board(12th)"></td>
+                    <td><input type="text"placeholder="yera of passing(12th)"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"placeholder="scchool(10th)"></td>
+                    <td> <input type="text"placeholder="board(10th)"></td>
+                    <td><input type="text"placeholder="yera of passing(10th)"></td>
+                </tr>
+            </table>
+            <label>DECLARATION</label>
+                <ol>
+                  <li>
+                     <input type="checkbox"> the proof submitted was true to your knowledge if in case of any illegal activities action must be taken
+                  </li>
+                 </ol>
+             <center><br><input type="SUBMIT"  style="background-color: chartreuse;"><br></center>
+            <td>if any error mail to <a href="mailto:kamalimeenashi@gmail.com">this mail</a></td><br><br>
+            <td>DOCUMENT NEED </td>
+                <ol type="I" >
+                 <li>aadhar_cardproof</li>
+                  <li>12th marsheet</li>
+                 <li>10th marksheet</li>
+                 </ol>
+         </form>
+           <script>       
+                document.getElementById('fileInput').addEventListener('change', function() {
+                const maxFiles = 3;
+                if (this.files.length > maxFiles) {
+                    alert('You can only upload up to ' + maxFiles + ' files.');
+                    this.value = ''; 
+                    }
+                });
+        </script>
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
